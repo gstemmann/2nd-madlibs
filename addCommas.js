@@ -1,3 +1,5 @@
+
+
 function addCommas(nStr) {
     nStr += '';
     x = nStr.split('.');
@@ -10,4 +12,4 @@ function addCommas(nStr) {
     return x1 + x2;
 }
 
-export default addCommas;
+module.exports = addCommas;
