@@ -18,6 +18,7 @@ const Madlibs = () => {
         <div>
             <h1>Madlibs</h1>
             <p>Fill in the blanks below to create a story!</p>
+        
             <MadlibForm addWords={addWords}/>
             <MadlibStory words={words}/>
 

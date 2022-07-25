@@ -30,28 +30,38 @@ const MadlibForm = ({ addWords }) => {
         return (
             
                 <form onSubmit={handleSubmit}>
-                    <label>Noun:</label>
+                    <label htmlFor="noun">Noun:</label>
                     <input 
+                        id="noun"
                         type="text" 
                         name="noun"
                         onChange={handleChange} 
-                     />
-                    <label>Verb:</label>
-                    <input 
+                        required
+                    />
+                    <label htmlFor="verb">Verb:</label>
+                    <input                         
+                        id="verb"
                         type="text" 
                         name="verb"
-                        onChange={handleChange} 
+                        onChange={handleChange}
+                        required 
                     />
-                    <label>Adjective:</label>
+                    <label htmlFor="adjective">Adjective:</label>
                     <input 
+                        id="adjective"
                         type="text" 
                         name="adjective"
-                        onChange={handleChange} />
-                    <label>Adverb:</label>
-                    <input 
+                        onChange={handleChange}
+                        required
+                    />
+                    <label htmlFor="adverb">Adverb:</label>
+                    <input
+                        id="adverb" 
                         type="text" 
                         name="adverb"
-                        onChange={handleChange} />
+                        onChange={handleChange}
+                        required
+                    />
                 <button>Submit</button>
             </form>
         )
